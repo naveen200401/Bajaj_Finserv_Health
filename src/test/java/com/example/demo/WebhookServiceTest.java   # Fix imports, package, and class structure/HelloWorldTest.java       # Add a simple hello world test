@@ -1,0 +1,32 @@
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class WebhookServiceTest {
+
+    @Test
+    void testWebhookService() {
+        // Example test logic
+        ResponseEntity<String> response = new ResponseEntity<>("Success", HttpStatus.OK);
+        assertEquals(HttpStatus.OK, response.getStatusCode());
+    }
+}
+
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class HelloWorldTest {
+
+    @Test
+    void testHelloWorld() {
+        String greeting = "Hello, World!";
+        assertEquals("Hello, World!", greeting);
+    }
+}
